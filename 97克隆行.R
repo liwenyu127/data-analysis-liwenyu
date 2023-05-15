@@ -22,9 +22,10 @@ while(i<l)
 }
 return(mydata)
 }
-
+#测试
 table = data.frame(
   姓名 = c("张三", "李四","王五"),
   工号 = c("001","002","003"),
   月薪 = c(1000, 2000,3000)
 )
+clonerow(table,3,"X","y")
