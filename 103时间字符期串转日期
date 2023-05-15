@@ -1,0 +1,9 @@
+#x为传入的时间字符期串time
+#时间戳在线转换工具：http://shijianchuo.wiicha.com/
+ms.date<-function(x){
+x=substr(x, 1,10)
+x<-as.numeric(x)
+class(x)='POSIXct'
+a=x
+return(a)
+}
