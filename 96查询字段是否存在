@@ -1,0 +1,13 @@
+library(xlsx)
+mydata=read.xlsx('C:/Users/44168/Desktop/新建 XLSX 工作表.xlsx',sheetIndex = 1)
+
+
+columnisexist<-function(data,column){
+  mydata<-data.frame(data)
+  c=names(mydata)
+  if(column %in% c) {
+    return ("存在")
+  } else {
+    return ("不存在")
+  }
+  }
